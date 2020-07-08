@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://main.gd" type="Script" id=1]
+
+[node name="root" type="VSplitContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+split_offset = 500
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="log" type="TextEdit" parent="."]
+margin_right = 1024.0
+margin_bottom = 500.0
+text = "Use PGUP/PGDN to reach command history, and Ctrl+Enter to evaluate! Ctrl+Del to clear outputs.
+"
+readonly = true
+highlight_current_line = true
+syntax_highlighting = true
+show_line_numbers = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="input" type="TextEdit" parent="."]
+margin_top = 512.0
+margin_right = 1024.0
+margin_bottom = 600.0
+syntax_highlighting = true
+show_line_numbers = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
